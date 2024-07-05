@@ -43,8 +43,8 @@ layout: home
 			
 			<li class="doc-link-li">
 				<a class="post-link" href="{{ recent.url | relative_url }}">
-					<span class="post-meta">{{ recent.collection }}</span>
 					<h3 style="display:inline">{{ recent.title | escape }}</h3>
+					<span class="post-meta">{{ recent.collection }}</span>
 					<span class="post-meta">{{ recent.date | date: site.date_format }}</span>
 				</a>
 			</li>
