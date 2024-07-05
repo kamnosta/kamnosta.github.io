@@ -88,6 +88,7 @@ collections:
     output: true
     permalink: /:collection/:slug
     order_reverse: false
+    desc: "Meters I have not"
 
 defaults:
   - scope:
