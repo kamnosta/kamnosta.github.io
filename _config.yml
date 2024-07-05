@@ -21,7 +21,7 @@
 title: DOMINIUM KAMNOSTAE
 email: kamnosta@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  HELLO????
+  KAMNOSTA -- 'TIS MY NAME
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kamnosta.net" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -34,6 +34,7 @@ home_cols:
   - comics
   - morenothing
   - schramble
+  - moreramble
   - scenes
   - objects
   - posts
@@ -83,6 +84,10 @@ collections:
     thumbnail_include: "thumbnail_art.html"
   posts:
     order_reverse: true
+  moreramble:
+    output: true
+    permalink: /:collection/:slug
+    order_reverse: false
 
 defaults:
   - scope:
@@ -120,6 +125,11 @@ defaults:
       type: scenes
     values:
       layout: scenes
+  - scope:
+      path: ""
+      type: moreramble
+    values:
+      layout: moreramble
 
 github: [metadata]
 kramdown:

@@ -1,0 +1,13 @@
+---
+layout: post
+---
+
+{% assign imgname = page.date | date: site.date_format_imgs | append: "_mr" | append: page.slug | append: ".png" %}
+
+<img alt="{{ imgname }}" src="/imgs_moreramble/{{ imgname }}">
+
+<p>-</p>
+
+<div>
+	{{ content }}
+</div>

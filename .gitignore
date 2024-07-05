@@ -5,3 +5,5 @@ _site
 vendor
 
 tmp/
+draft/
+drafts/
