@@ -21,21 +21,25 @@ layout: home
 	<div class="latest-content">{{ latest.content }}</div>
 </div>
 
-<div class="recent-div">
-	<h2 class="col-label">recent</h2>
+<p>- -</p>
 
+<div class="recent-div">
 	{% assign recents = site.documents %}
 	{% assign recents = recents | sort: "date" | reverse %}
 
 	{% assign idx = 0 %}
 
 	<ul class="docs-ul">
-		{% for i in (0..1) %}
+		{% for i in (0..0) %}
 			{% assign recent = recents[idx] %}
-			{% if recent.url == latest.url %}
-				{% assign idx = idx | plus: 1 %}
-				{% assign recent = recents[idx] %}
-			{% endif %}
+			{% for inf in (0..999) %}
+				{% if recent.collection == "illusts" %}
+					{% assign idx = idx | plus: 1 %}
+					{% assign recent = recents[idx] %}
+				{% else %}
+					{% break %}
+				{% endif %}
+			{% endfor %}
 			
 			<li class="doc-link-li">
 				<a class="post-link" href="{{ recent.url | relative_url }}">
