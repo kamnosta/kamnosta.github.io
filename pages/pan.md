@@ -1,9 +1,7 @@
 ---
-layout: base
+layout: redirect
 title: pan
 permalink: /pan
 
 redirect: /highping
 ---
-
-Redirecting to [/highping](/highping)
