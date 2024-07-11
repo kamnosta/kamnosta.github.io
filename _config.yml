@@ -156,6 +156,12 @@ kramdown:
     laquo_space: "<< "
     raquo_space: " >>"
 
+exclude:
+  - tmp/
+  - draft/
+  - drafts/
+  - run.sh
+
 # Build settings
 plugins:
   - jekyll-feed
