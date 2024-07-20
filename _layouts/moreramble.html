@@ -4,7 +4,7 @@ layout: post
 
 {% assign imgname = page.date | date: site.date_format_imgs | append: "_mr" | append: page.slug | append: ".png" %}
 
-<img alt="{{ imgname }}" src="/imgs_moreramble/{{ imgname }}">
+<img class="img_no_max_height" alt="{{ imgname }}" src="/imgs_moreramble/{{ imgname }}">
 
 <p>-</p>
 
@@ -13,6 +13,10 @@ layout: post
 </div>
 
 <style>
+	.img_no_max_height {
+		max-height: none !important;
+	}
+
 	.mr_content_div pre, .mr_content_div code {
 		font-family: inherit;
 		font-style: italic;
