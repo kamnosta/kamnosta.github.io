@@ -55,3 +55,9 @@ The truck (also used above) is from [Sketchfab, "Japanese Dump Truck", by *Pavel
 ...And...the...output...
 
 Yeah idk
+
+<style>
+	h2 a {
+		overflow-wrap: anywhere;
+	}
+</style>
