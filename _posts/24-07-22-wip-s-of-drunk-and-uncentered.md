@@ -12,20 +12,20 @@ This was supposed to be his "dissection" and the bottom imagery was his imaginat
 
 ...He is now on the truck...
 
-## 240720_dumptruck_2.png
-![/imgs_sketches/240720_dumptruck_2.png](/imgs_sketches/240720_dumptruck_2.png)
+## 240720_dumptruck_2.jpg
+![/imgs_sketches/240720_dumptruck_2.jpg](/imgs_sketches/240720_dumptruck_2.jpg)
 
 ...From behind...
 
 The truck (also used above) is from [Sketchfab, "Japanese Dump Truck", by *Pavel Gorbachev*, CC BY 4.0](https://sketchfab.com/3d-models/japanese-dump-truck-bdd68dcc73be430dbffff61017c95fb8). Thanks m8
 
-## 240721_dumptruck_3.png
-![/imgs_sketches/240721_dumptruck_3.png](/imgs_sketches/240721_dumptruck_3.png)
+## 240721_dumptruck_3.jpg
+![/imgs_sketches/240721_dumptruck_3.jpg](/imgs_sketches/240721_dumptruck_3.jpg)
 
 ...From front...
 
-## 240721_dumptruck_4.png
-![/imgs_sketches/240721_dumptruck_4.png](/imgs_sketches/240721_dumptruck_4.png)
+## 240721_dumptruck_4.jpg
+![/imgs_sketches/240721_dumptruck_4.jpg](/imgs_sketches/240721_dumptruck_4.jpg)
 
 ...From above...
 
