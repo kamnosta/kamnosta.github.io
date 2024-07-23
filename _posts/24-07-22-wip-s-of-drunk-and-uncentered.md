@@ -54,6 +54,11 @@ The truck (also used above) is from [Sketchfab, "Japanese Dump Truck", by *Pavel
 
 ...Cropped...
 
+## 240722_dumptruck_12.png
+![/imgs_sketches/240722_dumptruck_12.png](/imgs_sketches/240722_dumptruck_12.png)
+
+...Effects...
+
 ## [240722_drunk_and_uncentered.png](/illusts/240722-drunk-and-uncentered)
 ![/imgs/240722_drunk_and_uncentered.png](/imgs/240722_drunk_and_uncentered.png)
 
