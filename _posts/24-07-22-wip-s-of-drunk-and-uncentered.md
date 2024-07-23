@@ -49,6 +49,11 @@ The truck (also used above) is from [Sketchfab, "Japanese Dump Truck", by *Pavel
 
 ...Original ratio...
 
+## 240722_dumptruck_11.png
+![/imgs_sketches/240722_dumptruck_11.png](/imgs_sketches/240722_dumptruck_11.png)
+
+...Cropped...
+
 ## [240722_drunk_and_uncentered.png](/illusts/240722-drunk-and-uncentered)
 ![/imgs/240722_drunk_and_uncentered.png](/imgs/240722_drunk_and_uncentered.png)
 
