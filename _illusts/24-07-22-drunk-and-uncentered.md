@@ -1,5 +1,7 @@
 ---
 title: Drunk and Uncentered
+
+render_auto: true
 ---
 
 This took too long to compose, and the final output was cropped a minute before it was uploaded

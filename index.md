@@ -13,7 +13,7 @@ layout: home
 			</time>
 		</p>
 
-		{% include img_art.html page=latest %}
+		{% include img_art.html page=latest render_auto=latest.render_auto %}
 
 		<p>-</p>
 	</a>
