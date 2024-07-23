@@ -123,6 +123,7 @@ defaults:
       type: withcolor
     values:
       layout: art
+      render_auto: true
   - scope:
       path: ""
       type: objects
