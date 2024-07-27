@@ -32,10 +32,16 @@ layout: post
 	}
 </style>
 
-{% if page.mr_right_ailgn %}
+{% if page.mr_right_align %}
 	<style>
 		.mr_content_div {
 			text-align: right;
+		}
+	</style>
+{% elsif page.mr_left_align %}
+	<style>
+		.mr_content_div {
+			text-align: left;
 		}
 	</style>
 {% endif %}
