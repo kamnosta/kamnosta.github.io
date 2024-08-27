@@ -1,0 +1,47 @@
+---
+layout: post
+---
+
+{% assign imgname = page.date | date: site.date_format_imgs | append: "_spltr" | append: page.slug | append: ".png" %}
+
+<img class="img_no_max_height" alt="{{ imgname }}" src="/imgs_splitramble/{{ imgname }}">
+
+<p>-</p>
+
+<div class="spltr_content_div">
+	{{ content }}
+</div>
+
+<style>
+	.spltr_content_div pre, .spltr_content_div code {
+		font-family: inherit;
+		font-style: italic;
+		/* font-size: 95%; */
+
+		white-space: pre-wrap;
+	}
+
+	.spltr-name-span, .spltr-name-span * {
+		/* font-size: 90%; */
+		/* font-weight: bold; */
+		font-variant: small-caps !important;
+	}
+</style>
+
+{% if page.spltr_right_align %}
+	<style>
+		.spltr_content_div {
+			text-align: right;
+		}
+
+		.spltr_content_div p {
+			margin-bottom: 0.4em;
+		}
+	</style>
+{% elsif page.spltr_left_align %}
+	<style>
+		.spltr_content_div {
+			text-align: left;
+		}
+	</style>
+{% endif %}

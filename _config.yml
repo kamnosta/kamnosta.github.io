@@ -36,6 +36,7 @@ home_cols:
   - morenothing
   - schramble
   - moreramble
+  - splitramble
   - scenes
   - objects
   - posts
@@ -96,6 +97,11 @@ collections:
     order_reverse: true
     desc: "illusts from 24.03.30 - 24.06.27"
     thumbnail_include: "thumbnail_art.html"
+  splitramble:
+    output: true
+    permalink: /:collection/:slug
+    order_reverse: false
+    desc: "the redictable"
 
 defaults:
   - scope:
@@ -144,6 +150,11 @@ defaults:
       type: minimallines
     values:
       layout: art
+  - scope:
+      path: ""
+      type: splitramble
+    values:
+      layout: splitramble
 
 github: [metadata]
 kramdown:
