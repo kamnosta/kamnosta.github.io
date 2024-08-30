@@ -26,19 +26,17 @@ layout: post
 		/* font-weight: bold; */
 		font-variant: small-caps !important;
 	}
+
+	.spltr_content_div {
+		text-align: right;
+	}
+
+	.spltr_content_div p {
+		margin-bottom: 0.4em;
+	}
 </style>
 
-{% if page.spltr_right_align %}
-	<style>
-		.spltr_content_div {
-			text-align: right;
-		}
-
-		.spltr_content_div p {
-			margin-bottom: 0.4em;
-		}
-	</style>
-{% elsif page.spltr_left_align %}
+{% if page.spltr_left_align %}
 	<style>
 		.spltr_content_div {
 			text-align: left;
