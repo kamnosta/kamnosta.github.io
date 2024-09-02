@@ -124,6 +124,17 @@
 			.clr-w, .clr-w * {
 				color: #ffffff;
 			}
+
+			:root {
+				--clr-feral-rabbit: hsl(357deg, 100%, 38%);
+			}
+
+			.clr-feral-rabbit, .clr-feral-rabbit * {
+				color: var(--clr-feral-rabbit);
+			}
+			.clr-feral-rabbit-mw, .clr-feral-rabbit-mw * {
+				color: hsl(from var(--clr-feral-rabbit) h s calc(l*1.75));
+			}
 		</style>
 	</body>
 </html>
