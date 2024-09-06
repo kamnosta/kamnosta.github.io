@@ -127,6 +127,7 @@
 
 			:root {
 				--clr-feral-rabbit: hsl(357deg, 100%, 38%);
+				--clr-cyanic-siblings: hsl(194deg, 100%, 47%);
 			}
 
 			.clr-feral-rabbit, .clr-feral-rabbit * {
@@ -135,6 +136,16 @@
 			.clr-feral-rabbit-mw, .clr-feral-rabbit-mw * {
 				color: hsl(from var(--clr-feral-rabbit) h s calc(l*1.75));
 			}
+			.clr-cyanic-siblings, .clr-cyanic-siblings * {
+				color: var(--clr-cyanic-siblings);
+			}
+			.clr-cyanic-siblings-w, .clr-cyanic-siblings-w * {
+				color: hsl(from var(--clr-cyanic-siblings) h s calc(l*1.50));
+			}
+			.clr-cyanic-siblings-mw, .clr-cyanic-siblings-mw * {
+				color: hsl(from var(--clr-cyanic-siblings) h s calc(l*1.75));
+			}
+			
 		</style>
 	</body>
 </html>
