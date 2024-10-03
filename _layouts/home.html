@@ -37,6 +37,21 @@ layout: base
 				{%- endfor -%}
 				<br>
 			</div>
+		{% elsif col.verse %}
+			<ol class="docs-ol">
+				{% assign docs = col.docs %}
+				{% if col.order_reverse %}
+					{% assign docs = docs | reverse %}
+				{% endif %}
+				{% for doc in docs %}
+					<li class="doc-link-li">
+						<a class="post-link" href="{{ doc.url | relative_url }}">
+							<h4 class="firstverse">{{ doc.firstverse }}</h3>
+							<span class="post-meta">{{ doc.date | date: site.date_format }}</span>
+						</a>
+					</li>
+				{% endfor %}
+			</ol>
 		{% else %}
 			<ul class="docs-ul">
 				{%- assign docs = col.docs -%}
@@ -81,7 +96,7 @@ layout: base
 		text-decoration: none;
 	}
 
-	.docs-ul {
+	.docs-ul, .docs-ol {
 		margin-top: 0.3em;
 	}
 
@@ -100,5 +115,9 @@ layout: base
 		@media (64em < width) {
 			grid-template-columns: repeat(5, minmax(0, 1fr));
 		}
+	}
+
+	.firstverse {
+		display: inline;
 	}
 </style>

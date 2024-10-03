@@ -89,7 +89,8 @@ collections:
     output: true
     permalink: /:collection/:slug
     order_reverse: false
-    desc: "meters I have not"
+    desc: "don't read these"
+    verse: true
   minimallines:
     output: true
     permalink: /:collection/:short_year:month:day-:slug
@@ -101,6 +102,7 @@ collections:
     permalink: /:collection/:slug
     order_reverse: false
     desc: "the redictable"
+    verse: true
 
 defaults:
   - scope:
