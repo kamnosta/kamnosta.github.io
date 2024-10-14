@@ -33,7 +33,7 @@ layout: home
 		{% for i in (0..1) %}
 			{% assign recent = recents[idx] %}
 			{% for inf in (0..999) %}
-				{% if recent.collection == "illusts" %}
+				{% if recent.collection == "heartstudies" %}
 					{% assign idx = idx | plus: 1 %}
 					{% assign recent = recents[idx] %}
 				{% else %}
