@@ -30,7 +30,7 @@ timezone: Etc/UTC
 #github: [metadata] #Why is this needed...
 emptyarray: []
 home_cols:
-  - illusts
+  - heartstudies
   - minimallines
   - comics
   - morenothing
@@ -103,6 +103,12 @@ collections:
     order_reverse: false
     desc: "the redictable"
     verse: true
+  heartstudies:
+    output: true
+    permalink: /:collection/:short_year:month:day-:slug
+    order_reverse: true
+    desc: "illusts from 24.06.28 - 24.10.10"
+    thumbnail_include: "thumbnail_art.html"
 
 defaults:
   - scope:
@@ -156,6 +162,11 @@ defaults:
       type: splitramble
     values:
       layout: splitramble
+  - scope:
+      path: ""
+      type: heartstudies
+    values:
+      layout: art
 
 github: [metadata]
 kramdown:

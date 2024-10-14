@@ -3,7 +3,7 @@ layout: home
 ---
 
 <div class="latest-div">
-	{% assign latest = site.illusts | last %}
+	{% assign latest = site.heartstudies | last %}
 
 	<a href="{{ latest.url }}">
 		<h2 class="post-title">{{ latest.title | escape }}</h2>
