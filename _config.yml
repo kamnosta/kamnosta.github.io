@@ -39,6 +39,7 @@ home_cols:
   - scenes
   - objects
   - posts
+  - waterleveller
 
 date_format: "%y.%m.%d"
 date_format_imgs: "%y%m%d"
@@ -109,6 +110,11 @@ collections:
     order_reverse: true
     desc: "illusts from 24.06.28 - 24.10.10"
     thumbnail_include: "thumbnail_art.html"
+  waterleveller:
+    output: true
+    permalink: /:collection/:short_year:month:day-:slug
+    order_reverse: true
+    desc: "WIP"
 
 defaults:
   - scope:
@@ -167,6 +173,11 @@ defaults:
       type: heartstudies
     values:
       layout: art
+  - scope:
+      path: ""
+      type: waterleveller
+    values:
+      layout: post
 
 github: [metadata]
 kramdown:
