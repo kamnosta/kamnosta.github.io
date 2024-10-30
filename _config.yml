@@ -36,10 +36,10 @@ home_cols:
   - morenothing
   - schramble
   - splitramble
+  - waterleveller
   - scenes
   - objects
   - posts
-  - waterleveller
 
 date_format: "%y.%m.%d"
 date_format_imgs: "%y%m%d"
@@ -112,9 +112,8 @@ collections:
     thumbnail_include: "thumbnail_art.html"
   waterleveller:
     output: true
-    permalink: /:collection/:short_year:month:day-:slug
+    permalink: /:collection/:slug
     order_reverse: true
-    desc: "WIP"
 
 defaults:
   - scope:
@@ -177,7 +176,7 @@ defaults:
       path: ""
       type: waterleveller
     values:
-      layout: post
+      layout: waterleveller
 
 github: [metadata]
 kramdown:
