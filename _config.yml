@@ -30,13 +30,13 @@ timezone: Etc/UTC
 #github: [metadata] #Why is this needed...
 emptyarray: []
 home_cols:
+  - waterleveller
   - heartstudies
   - minimallines
   - comics
   - morenothing
   - schramble
   - splitramble
-  - waterleveller
   - scenes
   - objects
   - posts
@@ -114,6 +114,7 @@ collections:
     output: true
     permalink: /:collection/:slug
     order_reverse: true
+    thumbnail_include: "thumbnail_waterleveller.html"
 
 defaults:
   - scope:
