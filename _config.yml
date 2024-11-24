@@ -113,7 +113,7 @@ collections:
   waterleveller:
     output: true
     permalink: /:collection/:slug
-    order_reverse: true
+    order_reverse: false
     thumbnail_include: "thumbnail_waterleveller.html"
 
 defaults:
