@@ -34,7 +34,7 @@ layout: home
 	{% assign idx = 0 %}
 
 	<ul class="docs-ul">
-		{% for i in (0..1) %}
+		{% for i in (0..0) %}
 			{% assign recent = recents[idx] %}
 			{% for inf in (0..999) %}
 				{% if recent.collection == "waterleveller" %}
