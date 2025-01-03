@@ -115,6 +115,7 @@ collections:
     permalink: /:collection/:slug
     order_reverse: false
     thumbnail_include: "thumbnail_waterleveller.html"
+    verse: true
 
 defaults:
   - scope:

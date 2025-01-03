@@ -24,20 +24,8 @@ layout: base
 			{%- assign docs = docs | reverse -%}
 		{%- endif -%}
 
-		{% if col.thumbnail_include %}
-			<div class="docs-grid-wrapper">
-				{%- for doc in docs -%}
-					<div class="doc-grid-item">
-						<a class="post-link" href="{{ doc.url | relative_url }}">
-							{% include thumbnail.html page=doc %}<br>
-							<h3 style="display:inline">{{ doc.title | escape }}</h3><br>
-							<span class="post-meta">{{ doc.date | date: site.date_format }}</span>
-						</a>
-					</div>
-				{%- endfor -%}
-				<br>
-			</div>
-		{% elsif col.verse %}
+
+		{% if col.verse %}
 			<ol class="docs-ol">
 				{% assign docs = col.docs %}
 				{% if col.order_reverse %}
@@ -52,6 +40,19 @@ layout: base
 					</li>
 				{% endfor %}
 			</ol>
+		{% elsif col.thumbnail_include %}
+			<div class="docs-grid-wrapper">
+				{%- for doc in docs -%}
+					<div class="doc-grid-item">
+						<a class="post-link" href="{{ doc.url | relative_url }}">
+							{% include thumbnail.html page=doc %}<br>
+							<h3 style="display:inline">{{ doc.title | escape }}</h3><br>
+							<span class="post-meta">{{ doc.date | date: site.date_format }}</span>
+						</a>
+					</div>
+				{%- endfor -%}
+				<br>
+			</div>
 		{% else %}
 			<ul class="docs-ul">
 				{%- assign docs = col.docs -%}
