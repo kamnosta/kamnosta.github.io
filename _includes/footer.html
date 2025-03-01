@@ -1,0 +1,28 @@
+<footer>
+	<div>
+		{% if page.url == "/" %}
+			<p id="two-astrs-p"><a href="/hidden/">* *</a></p>
+		{% else %}
+			<p id="two-astrs-p">* *</p>
+		{% endif %}
+
+		<ul>
+			<li><a href="https://bsky.app/profile/kamnosta.bsky.social">Bsky</a> | <a href="https://kamnosta.newgrounds.com/">NG</a> | <a href="https://cara.app/kamnosta">Cara</a> | <a href="/links">&c.</a></li>
+
+			<li><a>Discord: <i>@kamnosta</i></a><br></li>
+		</ul>
+	</div>
+</footer>
+
+<style>
+	footer {
+		font-size: 80%;
+	}
+
+	#two-astrs-p {
+		margin-top: 1.5em;
+	}
+	#two-astrs-p a {
+		text-decoration: none;
+	}
+</style>

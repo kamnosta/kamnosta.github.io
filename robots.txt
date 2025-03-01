@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /posts/
+Disallow: /imgs_sketches/
+
+User-agent: Twitterbot
+Allow: /

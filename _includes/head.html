@@ -1,0 +1,41 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	{% assign topdomain = "https://kamnosta.net" %}
+	<meta property="og:url" content="{{ topdomain | append: page.url }}">
+	<meta property="og:type" content="website">
+
+	{% if page.title %}
+		{% assign title = page.title %}
+	{% else %}
+		{% assign title = site.title %}
+	{% endif %}
+	<title>{{ title }}</title>
+	<meta property="og:title" content="{{ title }}">
+	
+	{% assign image = "/favicon.png" %}
+	{% assign description = title %}
+	{% if page.collection %}
+		{% capture thumbnailname %}{% include thumbnail.html doc=page hrefonly=true %}{% endcapture %}
+		{% assign thumbnailname = thumbnailname | strip %}
+		{% if thumbnailname != "" %}
+			{% assign image = thumbnailname %}
+			{% assign description = page.collection %}
+		{% endif %}
+	{% endif %}
+
+	{% if page.og_image %}
+		{% assign image = page.og_image %}
+	{% endif %}
+	{% if page.og_description %}
+		{% assign description = page.og_description %}
+	{% endif %}
+
+	<meta property="og:image" content="{{ topdomain | append: image }}">
+	<meta property="og:description" content="{{ description }}">
+
+	{% if page.redirect %}
+		<meta http-equiv="refresh" content="0; url={{ page.redirect }}">
+	{% endif %}
+</head>

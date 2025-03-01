@@ -1,0 +1,4 @@
+{% comment %} parameter: page {% endcomment %}
+
+{% assign thumbnailname = include.page.date | date: site.date_format_imgs | append: "_sr" | append: include.page.slug | append: "-thumbnail.png" %}
+{{ thumbnailname }}

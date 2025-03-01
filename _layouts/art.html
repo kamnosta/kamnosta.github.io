@@ -1,0 +1,19 @@
+---
+layout: post
+---
+
+{% if page.noimage == nil or page.noimage == false %}
+
+	{% assign render_auto = false %}
+		{% if page.render_auto %}
+			{% assign render_auto = page.render_auto %}
+		{% endif %}
+
+	{% include img_art.html render_auto=render_auto %}
+
+	<p>-</p>
+{% endif %}
+
+<div>
+	{{ content }}
+</div>

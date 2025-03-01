@@ -1,0 +1,33 @@
+{% comment %} parameter: page {% endcomment %}
+
+{% if include.page %}
+	{% assign target_page = include.page %}
+{% else %}
+	{% assign target_page = page %}
+{% endif %}
+
+{% if include.imgs_dir %}
+	{% assign imgs_dir = include.imgs_dir %}
+{% else %}
+	{% assign imgs_dir = "imgs" %}
+{% endif %}
+
+{% if include.ext %}
+	{% assign ext = include.ext %}
+{% else %}
+	{% assign ext = ".png" %}
+{% endif %}
+
+{% assign imgname = target_page.url | split: "/" | last | replace: "-", "_" | append: ext %}
+<img alt="{{ imgname }}" src="/{{ imgs_dir }}/{{ imgname }}"
+	{% if include.render_auto %} class="img-rendering-auto" {% endif %}>
+
+{% if page.has_video %}
+{% assign vidname = imgname | replace: ext, ".mp4" %}
+	<p></p>
+
+	<video autoplay loop controls muted>
+		{{ vidname }}
+		<source src="/{{ imgs_dir }}/{{ vidname }}" type="video/mp4" />
+	</video>
+{% endif %}

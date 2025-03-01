@@ -1,0 +1,47 @@
+---
+layout: post
+---
+
+{% assign imgname = page.date | date: site.date_format_imgs | append: "_mr" | append: page.slug | append: ".png" %}
+
+<img class="img_no_max_height" alt="{{ imgname }}" src="/imgs_moreramble/{{ imgname }}">
+
+<p>-</p>
+
+<div class="mr_content_div">
+	{{ content }}
+</div>
+
+<style>
+	.mr_content_div pre, .mr_content_div code {
+		font-family: inherit;
+		font-style: italic;
+		/* font-size: 95%; */
+
+		white-space: pre-wrap;
+	}
+
+	.mr-name-span {
+		font-size: 90%;
+		font-weight: bold;
+		font-variant: small-caps;
+	}
+</style>
+
+{% if page.mr_right_align %}
+	<style>
+		.mr_content_div {
+			text-align: right;
+		}
+
+		.mr_content_div p {
+			margin-bottom: 0.4em;
+		}
+	</style>
+{% elsif page.mr_left_align %}
+	<style>
+		.mr_content_div {
+			text-align: left;
+		}
+	</style>
+{% endif %}
