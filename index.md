@@ -17,7 +17,7 @@ layout: home
 		{% include img_art.html page=latest render_auto=latest.render_auto %}
 		{% endcomment %}
 		{% assign imgname = latest.date | date: site.date_format_imgs | append: "_wl" | append: latest.slug | append: ".png" %}
-		<img alt="{{ imgname }}" src="/imgs_waterleveller/{{ imgname }}">
+		<img alt="{{ imgname }}" src="/imgs_waterleveller/{{ imgname }}" class="img-rendering-auto">
 
 		<p>-</p>
 	</a>
