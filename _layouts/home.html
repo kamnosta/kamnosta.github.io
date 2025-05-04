@@ -24,13 +24,12 @@ layout: base
 			{%- assign docs = docs | reverse -%}
 		{%- endif -%}
 
+		{%- if page.target_collections == nil and col.no_content_on_home -%}
+			{%- assign docs = nil -%}
+		{%- endif -%}
 
 		{% if col.verse %}
 			<ol class="docs-ol">
-				{% assign docs = col.docs %}
-				{% if col.order_reverse %}
-					{% assign docs = docs | reverse %}
-				{% endif %}
 				{% for doc in docs %}
 					<li class="doc-link-li">
 						<a class="post-link" href="{{ doc.url | relative_url }}">
@@ -55,10 +54,6 @@ layout: base
 			</div>
 		{% else %}
 			<ul class="docs-ul">
-				{%- assign docs = col.docs -%}
-				{%- if col.order_reverse -%}
-					{%- assign docs = docs | reverse -%}
-				{%- endif -%}
 				{%- for doc in docs -%}
 					<li class="doc-link-li">
 						<a class="post-link" href="{{ doc.url | relative_url }}">
