@@ -3,7 +3,10 @@ layout: home
 ---
 
 <div class="latest-div">
-	{% assign latest = site.waterleveller | last %}
+	{% comment %}
+	{% assign latest = site.heartstudies | last %}
+	{% endcomment %}
+	{% assign latest = site.heartstudies | where: "url", "/heartstudies/240802-the-lifting-of-the-head" | first %}
 
 	<a href="{{ latest.url }}">
 		<h2 class="post-title">{{ latest.title | escape }}</h2>
@@ -13,12 +16,8 @@ layout: home
 			</time>
 		</p>
 
-		{% comment %}
 		{% include img_art.html page=latest render_auto=latest.render_auto %}
-		{% endcomment %}
-		{% assign imgname = latest.date | date: site.date_format_imgs | append: "_wl" | append: latest.slug | append: ".png" %}
-		<img alt="{{ imgname }}" src="/imgs_waterleveller/{{ imgname }}" class="img-rendering-auto">
-
+		
 		<p>-</p>
 	</a>
 

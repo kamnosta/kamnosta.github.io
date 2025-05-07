@@ -33,8 +33,8 @@ home_cols:
   - heartstudies
   - minimallines
   - comics
-  - morenothing
   - schramble
+  - morenothing
   - splitramble
   - waterleveller
   - scenes
@@ -63,11 +63,13 @@ collections:
     order_reverse: false
     desc: "the aimless"
     thumbnail_include: "thumbnail_schramble.html"
+    no_content_on_home: true
   morenothing:
     output: true
     permalink: /:collection/:slug
     order_reverse: false
     thumbnail_include: "thumbnail_morenothing.html"
+    no_content_on_home: true
   withcolor:
     output: true
     permalink: /:collection/:short_year:month:day-:slug
@@ -86,6 +88,7 @@ collections:
     thumbnail_include: "thumbnail_art.html"
   posts:
     order_reverse: true
+    no_content_on_home: true
   moreramble:
     output: true
     permalink: /:collection/:slug
@@ -104,6 +107,7 @@ collections:
     order_reverse: false
     desc: "the redictable"
     verse: true
+    no_content_on_home: true
   heartstudies:
     output: true
     permalink: /:collection/:short_year:month:day-:slug
