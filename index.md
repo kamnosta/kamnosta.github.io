@@ -3,10 +3,11 @@ layout: home
 ---
 
 <div class="latest-div">
+	
+	{% assign latest = site.andheleftme | last %}
 	{% comment %}
-	{% assign latest = site.heartstudies | last %}
-	{% endcomment %}
 	{% assign latest = site.heartstudies | where: "url", "/heartstudies/240802-the-lifting-of-the-head" | first %}
+	{% endcomment %}
 
 	<a href="{{ latest.url }}">
 		<h2 class="post-title">{{ latest.title | escape }}</h2>
@@ -16,7 +17,11 @@ layout: home
 			</time>
 		</p>
 
+		{% comment %}
 		{% include img_art.html page=latest render_auto=latest.render_auto %}
+		{% endcomment %}
+		{% assign imgname = latest.date | date: site.date_format_imgs | append: "_ahlm" | append: latest.slug | append: ".png" %}
+		<img alt="{{ imgname }}" src="/imgs_andheleftme/{{ imgname }}" class="img-rendering-auto">
 		
 		<p>-</p>
 	</a>
@@ -36,7 +41,7 @@ layout: home
 		{% for i in (0..0) %}
 			{% assign recent = recents[idx] %}
 			{% for inf in (0..999) %}
-				{% if recent.collection == "waterleveller" %}
+				{% if recent.collection != "posts" %}
 					{% assign idx = idx | plus: 1 %}
 					{% assign recent = recents[idx] %}
 				{% else %}

@@ -30,6 +30,7 @@ timezone: Etc/UTC
 #github: [metadata] #Why is this needed...
 emptyarray: []
 home_cols:
+  - andheleftme
   - heartstudies
   - minimallines
   - comics
@@ -121,7 +122,12 @@ collections:
     verse: true
     desc: forgettable
     no_content_on_home: true
-
+  andheleftme:
+    output: true
+    permalink: /:collection/:slug
+    order_reverse: false
+    verse: false
+    
 defaults:
   - scope:
       path: ""
@@ -184,6 +190,11 @@ defaults:
       type: waterleveller
     values:
       layout: waterleveller
+  - scope:
+      path: ""
+      type: andheleftme
+    values:
+      layout: andheleftme
 
 github: [metadata]
 kramdown:
