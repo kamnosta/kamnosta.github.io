@@ -2,7 +2,12 @@
 layout: post
 ---
 
-{% assign imgname = page.date | date: site.date_format_imgs | append: "_ahlm" | append: page.slug | append: ".png" %}
+{% assign imgext = ".png" %}
+{% if page.imgext %}
+	{% assign imgext = page.imgext %}
+{% endif %}
+
+{% assign imgname = page.date | date: site.date_format_imgs | append: "_ahlm" | append: page.slug | append: imgext %}
 
 <img alt="{{ imgname }}" src="/imgs_andheleftme/{{ imgname }}">
 
