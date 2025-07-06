@@ -17,12 +17,11 @@ This is actually a 3D grid with a periodic ("toroidal") array, but as the dead (
 
 Masked only significant cells (`intensity > 0.1`).
 
-```
-∂u/∂t = Dᵤ∇²u - uv² + F(1-u)
-∂v/∂t = Dᵥ∇²v + uv² - (F+k)v
-```
+*∂u/∂t = Dᵤ∇²u - uv² + F(1-u)*
 
-Here, `F` = 0.039, `K` = 0.058 with `Dᵤ` = 0.2, `Dᵤ/Dᵥ` = 2. It draws the element with lesser amount.
+*∂v/∂t = Dᵥ∇²v + uv² - (F+k)v*
+
+Here, *F*=0.039, *K*=0.058 with *Dᵤ*=0.2, *Dᵤ*/*Dᵥ*=2. It draws the element with lesser amount.
 
 
 ---
