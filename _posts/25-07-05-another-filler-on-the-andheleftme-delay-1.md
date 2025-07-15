@@ -21,7 +21,7 @@ Masked only significant cells (`intensity > 0.1`).
 
 *∂v/∂t = Dᵥ∇²v + uv² - (F+k)v*
 
-Here, *F*=0.039, *K*=0.058 with *Dᵤ*=0.2, *Dᵤ*/*Dᵥ*=2. It draws the element with lesser amount.
+Here, *F*=0.039, *k*=0.058 with *Dᵤ*=0.2, *Dᵤ*/*Dᵥ*=2. It draws the element with lesser amount.
 
 
 ---
