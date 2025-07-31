@@ -20,7 +20,7 @@ layout: home
 		{% comment %}
 		{% include img_art.html page=latest render_auto=latest.render_auto %}
 		{% endcomment %}
-		{% assign imgname = latest.date | date: site.date_format_imgs | append: "_ahlm" | append: latest.slug | append: ".gif" %}
+		{% assign imgname = latest.date | date: site.date_format_imgs | append: "_ahlm" | append: latest.slug | append: ".png" %}
 		<img alt="{{ imgname }}" src="/imgs_andheleftme/{{ imgname }}" class="img-rendering-auto">
 		
 		<p>-</p>
