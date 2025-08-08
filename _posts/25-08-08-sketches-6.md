@@ -81,14 +81,15 @@ And roads unselfsustainable, gray.
 
 As it draws my legs returned I
 And took the bus, which routed
-to ways i can't remember,
+To ways i can't remember,
 
-[likely imaginary-expanded...]
+[Likely imaginary-expanded...]
 
 At the destination was a collapsed
 House-cells, around which people mourned.
 
-[Weirdly, the cellblock had the earth-color...]
+[Weirdly,
+the cellblock had the earth-color...]
 ```
 
 was what was written
