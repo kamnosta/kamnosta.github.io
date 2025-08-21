@@ -126,7 +126,7 @@ collections:
     output: true
     permalink: /:collection/:slug
     order_reverse: false
-    verse: false
+    verse: true
     
 defaults:
   - scope:
