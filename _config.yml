@@ -30,7 +30,7 @@ timezone: Etc/UTC
 #github: [metadata] #Why is this needed...
 emptyarray: []
 home_cols:
-  - andheleftme
+  - ishalvingover
   - heartstudies
   - minimallines
   - comics
@@ -38,6 +38,7 @@ home_cols:
   - morenothing
   - splitramble
   - waterleveller
+  - andheleftme
   - scenes
   - objects
   - posts
@@ -127,6 +128,12 @@ collections:
     permalink: /:collection/:slug
     order_reverse: false
     verse: true
+    desc: "dreamt and dreamt"
+  ishalvingover:
+    output: true
+    permalink: /:collection/:slug
+    order_reverse: false
+    verse: true
     
 defaults:
   - scope:
@@ -195,6 +202,11 @@ defaults:
       type: andheleftme
     values:
       layout: andheleftme
+  - scope:
+      path: ""
+      type: ishalvingover
+    values:
+      layout: ishalvingover
 
 github: [metadata]
 kramdown:

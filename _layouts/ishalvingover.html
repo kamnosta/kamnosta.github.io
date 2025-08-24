@@ -1,0 +1,20 @@
+---
+layout: post
+---
+
+{% assign imgext = ".png" %}
+{% if page.imgext %}
+	{% assign imgext = page.imgext %}
+{% endif %}
+
+{% assign imgname = page.date | date: site.date_format_imgs | append: "_iho" | append: page.slug | append: imgext %}
+
+<h2>{{ page.firstverse }}</h2>
+
+<img alt="{{ imgname }}" src="/imgs_ishalvingover/{{ imgname }}">
+
+<p>-</p>
+
+<div>
+	{{ content }}
+</div>

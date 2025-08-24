@@ -4,13 +4,13 @@ layout: home
 
 <div class="latest-div">
 	
-	{% assign latest = site.andheleftme | last %}
+	{% assign latest = site.ishalvingover | last %}
 	{% comment %}
 	{% assign latest = site.heartstudies | where: "url", "/heartstudies/240802-the-lifting-of-the-head" | first %}
 	{% endcomment %}
 
 	<a href="{{ latest.url }}">
-		<h2 class="post-title">{{ latest.title | escape }}</h2>
+		<h1 class="post-title">{{ latest.title | escape }}</h1>
 		<p class="post-meta">
 			<time datetime="{{ latest.date | date_to_xmlschema }}">
 				{{ latest.date | date: site.date_format }}
@@ -20,8 +20,9 @@ layout: home
 		{% comment %}
 		{% include img_art.html page=latest render_auto=latest.render_auto %}
 		{% endcomment %}
-		{% assign imgname = latest.date | date: site.date_format_imgs | append: "_ahlm" | append: latest.slug | append: ".png" %}
-		<img alt="{{ imgname }}" src="/imgs_andheleftme/{{ imgname }}" class="img-rendering-auto">
+		<h2>{{ latest.firstverse }}</h2>
+		{% assign imgname = latest.date | date: site.date_format_imgs | append: "_iho" | append: latest.slug | append: ".png" %}
+		<img alt="{{ imgname }}" src="/imgs_ishalvingover/{{ imgname }}">
 		
 		<p>-</p>
 	</a>
