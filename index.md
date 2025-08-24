@@ -27,7 +27,7 @@ layout: home
 		<p>-</p>
 	</a>
 
-	<div class="latest-content">{{ latest.content }}</div>
+	<div class="latest-content iho_content_div">{{ latest.content }}</div>
 </div>
 
 <p>- -</p>
@@ -83,5 +83,10 @@ layout: home
 
 	.latest-content a {
 		text-decoration: underline;
+	}
+
+	.iho_content_div {
+		text-align: left;
+		text-indent: 0.5em;
 	}
 </style>
