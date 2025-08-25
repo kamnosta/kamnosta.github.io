@@ -10,12 +10,14 @@ layout: home
 	{% endcomment %}
 
 	<a href="{{ latest.url }}">
-		<h1 class="post-title">{{ latest.title | escape }}</h1>
-		<p class="post-meta">
-			<time datetime="{{ latest.date | date_to_xmlschema }}">
-				{{ latest.date | date: site.date_format }}
-			</time>
-		</p>
+		<header>
+			<h1 class="post-title">{{ latest.title | escape }}</h1>
+			<p class="post-meta">
+				<time datetime="{{ latest.date | date_to_xmlschema }}">
+					{{ latest.date | date: site.date_format }}
+				</time>
+			</p>
+		</header>
 
 		{% comment %}
 		{% include img_art.html page=latest render_auto=latest.render_auto %}
