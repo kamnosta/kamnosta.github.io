@@ -72,6 +72,7 @@ collections:
     order_reverse: false
     thumbnail_include: "thumbnail_morenothing.html"
     no_content_on_home: true
+    desc: crawling out
   withcolor:
     output: true
     permalink: /:collection/:short_year:month:day-:slug
@@ -121,7 +122,7 @@ collections:
     permalink: /:collection/:slug
     order_reverse: false
     verse: true
-    desc: forgettable
+    desc: forgettable; don't read this one too
     no_content_on_home: true
   andheleftme:
     output: true
@@ -134,6 +135,7 @@ collections:
     permalink: /:collection/:slug
     order_reverse: false
     verse: true
+    desc: WIP
     
 defaults:
   - scope:

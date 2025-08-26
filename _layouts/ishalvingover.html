@@ -2,16 +2,7 @@
 layout: post
 ---
 
-{% assign imgext = ".png" %}
-{% if page.imgext %}
-	{% assign imgext = page.imgext %}
-{% endif %}
-
-{% assign imgname = page.date | date: site.date_format_imgs | append: "_iho" | append: page.slug | append: imgext %}
-
 <h2>{{ page.firstverse }}</h2>
-
-<img alt="{{ imgname }}" src="/imgs_ishalvingover/{{ imgname }}">
 
 <p>-</p>
 
@@ -22,6 +13,6 @@ layout: post
 <style>
 	.iho_content_div {
 		text-align: left;
-		text-indent: 0.5em;
+		text-indent: 0.25em;
 	}
 </style>

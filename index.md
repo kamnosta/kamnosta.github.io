@@ -3,11 +3,7 @@ layout: home
 ---
 
 <div class="latest-div">
-	
-	{% assign latest = site.ishalvingover | last %}
-	{% comment %}
 	{% assign latest = site.heartstudies | where: "url", "/heartstudies/240802-the-lifting-of-the-head" | first %}
-	{% endcomment %}
 
 	<a href="{{ latest.url }}">
 		<header>
@@ -19,17 +15,12 @@ layout: home
 			</p>
 		</header>
 
-		{% comment %}
 		{% include img_art.html page=latest render_auto=latest.render_auto %}
-		{% endcomment %}
-		<h2>{{ latest.firstverse }}</h2>
-		{% assign imgname = latest.date | date: site.date_format_imgs | append: "_iho" | append: latest.slug | append: ".png" %}
-		<img alt="{{ imgname }}" src="/imgs_ishalvingover/{{ imgname }}">
 		
 		<p>-</p>
 	</a>
 
-	<div class="latest-content iho_content_div">{{ latest.content }}</div>
+	<div class="latest-content">{{ latest.content }}</div>
 </div>
 
 <p>- -</p>
@@ -85,10 +76,5 @@ layout: home
 
 	.latest-content a {
 		text-decoration: underline;
-	}
-
-	.iho_content_div {
-		text-align: left;
-		text-indent: 0.5em;
 	}
 </style>
