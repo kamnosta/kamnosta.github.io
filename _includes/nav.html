@@ -1,12 +1,13 @@
 <div class="nav">
 	<p class="nav-divider-p">- -</p>
 
-	<p class="col-label"><a class="col-link" href="/{{ page.collection }}/">{{ page.collection }}</a></p>
+	{% assign col = site.collections | where: "label", page.collection | first %}
+
+	<p class="col-label"><a class="col-link" href="/{{ page.collection }}/">{{ page.collection }}{% if col.desc %}<br><span class="col-desc">{{ col.desc }}</span>{% endif %}</a></p>
 
 	{% assign prev = page.previous %}
 	{% assign next = page.next %}
 
-	{% assign col = site.collections | where: "label", page.collection | first %}
 	{% assign thumbnail_include = col.thumbnail_include %}
 	
 	<div class="prevnext-container">
@@ -57,6 +58,11 @@
 <style>
 	.nav {
 		font-size: 90%;
+	}
+
+	.col-desc {
+		font-size: 70%;
+		margin: 0;
 	}
 
 	.prevnext-container {
