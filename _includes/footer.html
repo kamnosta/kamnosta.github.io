@@ -1,0 +1,48 @@
+<footer>
+	<div>
+		{% assign found = false %}
+		{% assign recents = site.documents %}
+		{% assign recents = recents | sort: "date" %}
+		{% for recent in recents %}
+			{% if recent.url == page.url %}
+				{% assign found = true %}
+				{% break %}
+			{% endif %}
+		{% assign idx = idx | plus: 1 %}
+		{% endfor %}
+
+		{% if found %}
+			{% assign rec_prev = site %}
+			{% if idx > 0 %}
+				{% assign rec_prev_idx = idx | minus: 1 %}
+				{% assign rec_prev = recents | slice: rec_prev_idx | first %}
+			{% endif %}
+
+			{% assign rec_next = site %}
+			{% assign rec_next_idx = idx | plus: 1 %}
+			{% if rec_next_idx < recents.size %}
+				{% assign rec_next = recents | slice: rec_next_idx | first %}
+			{% endif %}
+
+			<p id="two-astrs-p"><a href={{ rec_prev.url }}>*</a> <a href={{ rec_next.url }}>*</a></p>
+		{% else %}
+			<p id="two-astrs-p"><a href="/hidden/">* *</a></p>
+		{% endif %}
+		<ul>
+			<li><a>Discord: <i>@kamnosta</i></a> | <a href="/links">&c.</a></li>
+		</ul>
+	</div>
+</footer>
+
+<style>
+	footer {
+		font-size: 80%;
+	}
+
+	#two-astrs-p {
+		margin-top: 1.5em;
+	}
+	#two-astrs-p a {
+		text-decoration: none;
+	}
+</style>

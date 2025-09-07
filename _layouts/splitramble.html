@@ -1,0 +1,112 @@
+---
+layout: post
+---
+
+{% assign imgname = page.date | date: site.date_format_imgs | append: "_spltr" | append: page.slug | append: ".png" %}
+
+<img class="img_no_max_height" alt="{{ imgname }}" src="/imgs_splitramble/{{ imgname }}">
+
+<p>-</p>
+
+<div class="spltr_content_div">
+	{{ content }}
+</div>
+
+<style>
+	.spltr_content_div pre, .spltr_content_div code {
+		font-family: inherit;
+		font-style: italic;
+		/* font-size: 95%; */
+
+		white-space: pre-wrap;
+	}
+
+	.spltr-name-span, .spltr-name-span * {
+		/* font-size: 90%; */
+		/* font-weight: bold; */
+		font-variant: small-caps !important;
+	}
+
+	.spltr_content_div {
+		text-align: right;
+	}
+
+	.spltr_content_div p {
+		margin-bottom: 0.4em;
+	}
+
+	.clr-m-mw, .clr-m-mw * {
+		color: #fbd3e4;
+	}
+	.clr-r-mw, .clr-r-mw * {
+		color: #fce6cd;
+	}
+	.clr-b-mw, .clr-b-mw * {
+		color: #c9c0df;
+	}
+	.clr-w-mw, .clr-w-mw * {
+		color: #ffffff;
+	}
+
+	.clr-m-w, .clr-m-w * {
+		color: #f39ec2;
+	}
+	.clr-r-w, .clr-r-w * {
+		color: #f49b75;
+	}
+	.clr-b-w, .clr-b-w * {
+		color: #9182bc;
+	}
+	.clr-w-w, .clr-w-w * {
+		color: #ffffff;
+	}
+	
+	.clr-m, .clr-m * {
+		color: #e6007f;
+	}
+	.clr-r, .clr-r * {
+		color: #e70012;
+	}
+	.clr-b, .clr-b * {
+		color: #222088;
+	}
+	.clr-w, .clr-w * {
+		color: #ffffff;
+	}
+
+	:root {
+		--clr-feral-rabbit: hsl(357deg, 100%, 38%);
+		--clr-cyanic-siblings: hsl(194deg, 100%, 47%);
+		--clr-di-ex-machina: hsl(56deg, 100%, 66%);
+	}
+
+	.clr-feral-rabbit, .clr-feral-rabbit * {
+		color: var(--clr-feral-rabbit);
+	}
+	.clr-feral-rabbit-mw, .clr-feral-rabbit-mw * {
+		color: hsl(from var(--clr-feral-rabbit) h s calc(l*1.75));
+	}
+	.clr-cyanic-siblings, .clr-cyanic-siblings * {
+		color: var(--clr-cyanic-siblings);
+	}
+	.clr-cyanic-siblings-w, .clr-cyanic-siblings-w * {
+		color: hsl(from var(--clr-cyanic-siblings) h s calc(l*1.50));
+	}
+	.clr-cyanic-siblings-mw, .clr-cyanic-siblings-mw * {
+		color: hsl(from var(--clr-cyanic-siblings) h s calc(l*1.75));
+	}
+	.clr-di-ex-machina-w, .clr-di-ex-machina-w * {
+		color: hsl(from var(--clr-di-ex-machina) h s calc(l*1.50));
+	}
+	.clr-di-ex-machina-mw, .clr-di-ex-machina-mw * {
+		color: hsl(from var(--clr-di-ex-machina) h s calc(l*1.75));
+	}
+</style>
+
+{% if page.spltr_left_align %}
+	<style>
+		.spltr_content_div {
+			text-align: left;
+		}
+	</style>
+{% endif %}

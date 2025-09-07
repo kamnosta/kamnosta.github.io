@@ -1,0 +1,119 @@
+---
+layout: base
+---
+
+<div class="home">
+
+	{{ content }}
+	
+	{%- assign target_collections = site.home_cols %}
+	{%- if page.target_collections -%}
+		{%- assign target_collections = page.target_collections -%}
+	{%- endif -%}
+
+	{%- for colname in target_collections -%}
+		{%- assign col = site.collections | where: "label", colname | first %}
+		<h2 class="col-label"><a class="col-link" href="/{{ col.label }}/">{{ col.label }}</a></h2>
+
+		{%- if col.desc != nil -%}
+			<p class="col-desc">{{ col.desc }}</p>
+		{%- endif -%}
+
+		{%- assign docs = col.docs -%}
+		{%- if col.order_reverse -%}
+			{%- assign docs = docs | reverse -%}
+		{%- endif -%}
+
+		{%- if page.target_collections == nil and col.no_content_on_home -%}
+			{%- assign docs = nil -%}
+		{%- endif -%}
+
+		{% if col.verse %}
+			<ol class="docs-ol">
+				{% for doc in docs %}
+					<li class="doc-link-li">
+						<a class="post-link" href="{{ doc.url | relative_url }}">
+							<h4 class="firstverse">{{ doc.firstverse }}</h3>
+							<span class="post-meta">{{ doc.date | date: site.date_format }}</span>
+						</a>
+					</li>
+				{% endfor %}
+			</ol>
+		{% elsif col.thumbnail_include %}
+			<div class="docs-grid-wrapper">
+				{%- for doc in docs -%}
+					<div class="doc-grid-item">
+						<a class="post-link" href="{{ doc.url | relative_url }}">
+							{% include thumbnail.html page=doc %}<br>
+							<h3 style="display:inline">{{ doc.title | escape }}</h3><br>
+							<span class="post-meta">{{ doc.date | date: site.date_format }}</span>
+						</a>
+					</div>
+				{%- endfor -%}
+				<br>
+			</div>
+		{% else %}
+			<ul class="docs-ul">
+				{%- for doc in docs -%}
+					<li class="doc-link-li">
+						<a class="post-link" href="{{ doc.url | relative_url }}">
+							<h3 style="display:inline">{{ doc.title | escape }}</h3>
+							<span class="post-meta">{{ doc.date | date: site.date_format }}</span>
+						</a>
+					</li>
+				{%- endfor -%}
+				<br>
+			</ul>
+		{% endif %}
+
+		
+	{%- endfor -%}
+</div>
+
+<style>
+	.col-label {
+		margin-top: 2em;
+		margin-bottom: 0.25em;
+	}
+	.col-label a {
+		text-decoration: none;
+	}
+	
+	.col-desc {
+		font-size: 90%;
+		margin: 0;
+	}
+
+	.doc-link-li {
+		margin: 0.1em;
+	}
+
+	.post-link {
+		text-decoration: none;
+	}
+
+	.docs-ul, .docs-ol {
+		margin-top: 0.3em;
+	}
+
+	.docs-grid-wrapper {
+		width: 100%;
+		margin-top: 1em;
+
+		display: grid;
+		
+		grid-gap: 1em;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+
+		@media (48em < width) {
+			grid-template-columns: repeat(4, minmax(0, 1fr));
+		}
+		@media (64em < width) {
+			grid-template-columns: repeat(5, minmax(0, 1fr));
+		}
+	}
+
+	.firstverse {
+		display: inline;
+	}
+</style>

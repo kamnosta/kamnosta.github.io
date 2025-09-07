@@ -1,0 +1,125 @@
+<div class="nav">
+	<p class="nav-divider-p">- -</p>
+
+	{% assign col = site.collections | where: "label", page.collection | first %}
+
+	<p class="col-label"><a class="col-link" href="/{{ page.collection }}/">{{ page.collection }}{% if col.desc %}<br><span class="col-desc">{{ col.desc }}</span>{% endif %}</a></p>
+
+	{% assign prev = page.previous %}
+	{% assign next = page.next %}
+
+	{% assign thumbnail_include = col.thumbnail_include %}
+	
+	<div class="prevnext-container">
+		{% if prev != nil %}
+			<a class="nav-post-link" href="{{ prev.url | relative_url }}">
+				<div class="prev">
+					<span class="navlabel">&lt; </span>
+
+					{% if thumbnail_include != nil %}
+						<div class="nav-thumbnail-img-container">
+							{% include thumbnail.html doc=prev %}
+						</div>
+					{% endif %}
+
+					<div class="nav-title-meta-container">
+						<p>{{ prev.title | escape }}</p>
+						<span class="post-meta">{{ prev.date | date: site.date_format }}</span>
+					</div>
+				</div>
+			</a>
+		{% else %}
+			<div class="nav-post-link dummy"></div>
+		{% endif %}
+
+		{% if next != nil %}
+			<a class="nav-post-link" href="{{ next.url | relative_url }}">
+				<div class="next">
+					<div class="nav-title-meta-container">
+						<p>{{ next.title | escape }}</p>
+						<span class="post-meta">{{ next.date | date: site.date_format }}</span>
+					</div>
+
+					{% if thumbnail_include != nil %}
+						<div class="nav-thumbnail-img-container">				
+							{% include thumbnail.html doc=next %}
+						</div>
+					{% endif %}
+
+					<span class="navlabel"> &gt;</span>
+				</div>
+			</a>
+		{% else %}
+			<div class="nav-post-link dummy"></div>
+		{% endif %}
+	</div>
+</div>
+
+<style>
+	.nav {
+		font-size: 90%;
+	}
+
+	.col-desc {
+		font-size: 70%;
+		margin: 0;
+	}
+
+	.prevnext-container {
+		display: table;
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	.nav-post-link {
+		display: table-cell;
+		width: 100%;
+	}
+
+	.prev, .next {
+		display: flex;
+		margin-top: 0;
+		height: 100%;
+	}
+
+	.prev {
+		text-align: left;
+	}
+	.next {
+		text-align: right;
+		justify-content: flex-end;
+	}
+
+	.nav-thumbnail-img-container {
+		width: 4em;
+		height: 4em;
+		margin: 0.5em;
+
+		flex-shrink: 0;
+	}
+
+	.nav-title-meta-container {
+		margin: 0.2em;
+		min-width: 0;
+	}
+
+	.nav-title-meta-container p {
+		overflow-wrap: break-word;
+	}
+
+	.navlabel{
+		font-size: 90%;
+	}
+
+	.navlabel {
+		margin: 0.25em;
+	}
+
+	.nav-divider-p {
+		margin-top: 3em;
+	}
+
+	.nav a {
+		text-decoration: none;
+	}
+</style>

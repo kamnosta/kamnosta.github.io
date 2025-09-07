@@ -1,0 +1,86 @@
+---
+layout: post
+---
+
+{% assign imgname = page.date | date: site.date_format_imgs | append: "_mr" | append: page.slug | append: ".png" %}
+
+<img class="img_no_max_height" alt="{{ imgname }}" src="/imgs_moreramble/{{ imgname }}">
+
+<p>-</p>
+
+<div class="mr_content_div">
+	{{ content }}
+</div>
+
+<style>
+	.mr_content_div pre, .mr_content_div code {
+		font-family: inherit;
+		font-style: italic;
+		/* font-size: 95%; */
+
+		white-space: pre-wrap;
+	}
+
+	.mr-name-span {
+		font-size: 90%;
+		font-weight: bold;
+		font-variant: small-caps;
+	}
+
+	.clr-m-mw, .clr-m-mw * {
+		color: #fbd3e4;
+	}
+	.clr-r-mw, .clr-r-mw * {
+		color: #fce6cd;
+	}
+	.clr-b-mw, .clr-b-mw * {
+		color: #c9c0df;
+	}
+	.clr-w-mw, .clr-w-mw * {
+		color: #ffffff;
+	}
+
+	.clr-m-w, .clr-m-w * {
+		color: #f39ec2;
+	}
+	.clr-r-w, .clr-r-w * {
+		color: #f49b75;
+	}
+	.clr-b-w, .clr-b-w * {
+		color: #9182bc;
+	}
+	.clr-w-w, .clr-w-w * {
+		color: #ffffff;
+	}
+	
+	.clr-m, .clr-m * {
+		color: #e6007f;
+	}
+	.clr-r, .clr-r * {
+		color: #e70012;
+	}
+	.clr-b, .clr-b * {
+		color: #222088;
+	}
+	.clr-w, .clr-w * {
+		color: #ffffff;
+	}
+</style>
+
+{% if page.mr_right_align %}
+	<style>
+		.mr_content_div {
+			text-align: right;
+		}
+
+		.mr_content_div p {
+			margin-bottom: 0.4em;
+		}
+	</style>
+{% elsif page.mr_left_align %}
+	<style>
+		.mr_content_div {
+			text-align: left;
+		}
+	</style>
+{% endif %}

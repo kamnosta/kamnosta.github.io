@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	
+	{%- include head.html -%}
+
+	<body>
+		{%- include header.html -%}
+
+		<main>
+			<div>
+				{{ content }}
+			</div>
+		</main>
+
+		{%- include footer.html -%}
+
+		<style>
+			html {
+				text-align: center;
+				display: flex;
+  				justify-content: center;
+			}
+
+			body {
+				background-color: black;
+				color: white;
+				font-family: "Courier New", Courier, sans-serif;
+
+				font-size: 100%;
+				overflow-wrap: break-word;
+
+				padding-left: 4%;
+				padding-right: 4%;
+
+				margin: 0 auto;
+
+				width: 100vh;
+				@media (orientation: portrait) {
+					width: 100vw;
+				}
+
+				@media (64em < width) {
+					font-size: 125%;
+				}
+			}
+
+			a {
+				color: white;
+			}
+
+			ul {
+				display: inline-block;
+				list-style-type: "- ";
+			}
+
+			li {
+				text-align: left;
+			}
+
+			img {
+				max-width: 100%;
+				max-height: 100%;
+
+				image-rendering: pixelated;
+			}
+
+			blockquote {
+				border: 1em solid;
+				padding: 10%;
+				font-style: italic;
+			}
+
+			.thumbnail {
+				image-rendering: auto;
+			}
+
+			.post-meta {
+				font-size: 90%;
+			}
+
+			.img-rendering-auto {
+				image-rendering: auto;
+			}
+
+			.img_no_max_height {
+				max-height: none !important;
+			}
+		</style>
+	</body>
+</html>

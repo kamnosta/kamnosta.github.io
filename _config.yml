@@ -1,0 +1,253 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: DOMINIUM KAMNOSTAE
+email: kamnosta@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  KAMNOSTA -- 'TIS MY NAME
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://kamnosta.net" # the base hostname & protocol for your site, e.g. http://example.com
+
+timezone: Etc/UTC
+
+#github: [metadata] #Why is this needed...
+emptyarray: []
+home_cols:
+  - ishalvingover
+  - heartstudies
+  - minimallines
+  - comics
+  - schramble
+  - morenothing
+  - splitramble
+  - waterleveller
+  - andheleftme
+  - scenes
+  - objects
+  - posts
+
+date_format: "%y.%m.%d"
+date_format_imgs: "%y%m%d"
+permalink: /:collection/:short_year:month:day-:slug
+
+collections:
+  illusts:
+    output: true
+    permalink: /:collection/:short_year:month:day-:slug
+    order_reverse: true
+    thumbnail_include: "thumbnail_art.html"
+  comics:
+    output: true
+    permalink: /:collection/:short_year:month:day-:slug
+    order_reverse: true
+    has_thumbnails: true
+    thumbnail_include: "thumbnail_art.html"
+  schramble:
+    output: true
+    permalink: /:collection/:slug
+    order_reverse: false
+    desc: "the aimless"
+    thumbnail_include: "thumbnail_schramble.html"
+    no_content_on_home: true
+  morenothing:
+    output: true
+    permalink: /:collection/:slug
+    order_reverse: false
+    thumbnail_include: "thumbnail_morenothing.html"
+    no_content_on_home: true
+    desc: crawling out
+  withcolor:
+    output: true
+    permalink: /:collection/:short_year:month:day-:slug
+    order_reverse: false
+    desc: "drawings from 24.02.03 - 24.03.27"
+    thumbnail_include: null
+  objects:
+    output: true
+    permalink: /:collection/:short_year:month:day-:slug
+    order_reverse: true
+    thumbnail_include: "thumbnail_art.html"
+  scenes:
+    output: true
+    permalink: /:collection/:short_year:month:day-:slug
+    order_reverse: true
+    thumbnail_include: "thumbnail_art.html"
+  posts:
+    order_reverse: true
+    no_content_on_home: true
+  moreramble:
+    output: true
+    permalink: /:collection/:slug
+    order_reverse: false
+    desc: "don't read these"
+    verse: true
+  minimallines:
+    output: true
+    permalink: /:collection/:short_year:month:day-:slug
+    order_reverse: true
+    desc: "illusts from 24.03.30 - 24.06.27"
+    thumbnail_include: "thumbnail_art.html"
+  splitramble:
+    output: true
+    permalink: /:collection/:slug
+    order_reverse: false
+    desc: "the redictable"
+    verse: true
+    no_content_on_home: true
+  heartstudies:
+    output: true
+    permalink: /:collection/:short_year:month:day-:slug
+    order_reverse: true
+    desc: "illusts from 24.06.28 - 24.10.10"
+    thumbnail_include: "thumbnail_art.html"
+  waterleveller:
+    output: true
+    permalink: /:collection/:slug
+    order_reverse: false
+    verse: true
+    desc: forgettable; don't read this one too
+    no_content_on_home: true
+  andheleftme:
+    output: true
+    permalink: /:collection/:slug
+    order_reverse: false
+    verse: true
+    desc: "dreamt and dreamt"
+  ishalvingover:
+    output: true
+    permalink: /:collection/:slug
+    order_reverse: false
+    verse: true
+    desc: WIP
+    
+defaults:
+  - scope:
+      path: ""
+      type: illusts
+    values:
+      layout: art
+  - scope:
+      path: ""
+      type: comics
+    values:
+      layout: art
+  - scope:
+      path: ""
+      type: schramble
+    values:
+      layout: schramble
+  - scope:
+      path: ""
+      type: morenothing
+    values:
+      layout: morenothing  
+  - scope:
+      path: ""
+      type: withcolor
+    values:
+      layout: art
+      render_auto: true
+  - scope:
+      path: ""
+      type: objects
+    values:
+      layout: objects
+  - scope:
+      path: ""
+      type: scenes
+    values:
+      layout: scenes
+  - scope:
+      path: ""
+      type: moreramble
+    values:
+      layout: moreramble
+  - scope:
+      path: ""
+      type: minimallines
+    values:
+      layout: art
+  - scope:
+      path: ""
+      type: splitramble
+    values:
+      layout: splitramble
+  - scope:
+      path: ""
+      type: heartstudies
+    values:
+      layout: art
+  - scope:
+      path: ""
+      type: waterleveller
+    values:
+      layout: waterleveller
+  - scope:
+      path: ""
+      type: andheleftme
+    values:
+      layout: andheleftme
+  - scope:
+      path: ""
+      type: ishalvingover
+    values:
+      layout: ishalvingover
+
+github: [metadata]
+kramdown:
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+  typographic_symbols:
+    hellip: "..."
+    mdash: "---"
+    ndash: "--"
+    laquo: "<<"
+    raquo: ">>"
+    laquo_space: "<< "
+    raquo_space: " >>"
+
+exclude:
+  - tmp/
+  - draft/
+  - drafts/
+  - run.sh
+
+# Build settings
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
