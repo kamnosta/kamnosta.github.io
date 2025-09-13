@@ -14,4 +14,14 @@ Hornet!!!
 
 I really hate this "Widow" fucker
 
-Stay dead :D
+Stay dead `:D`
+
+---
+*25.09.13*
+
+```
+faridula zimanet
+donipwana volinet
+pinasɑ̃mi maniset
+danafɑ̃sju lœːbɔ̃ !
+```
