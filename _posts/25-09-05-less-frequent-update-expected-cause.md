@@ -22,6 +22,6 @@ Stay dead `:D`
 ```
 faridula zimanet
 donipwana volinet
-pinasɑ̃mi maniset
-danafɑ̃sju lœːbɔ̃ !
+pinasãmi maniset
+danafãsju lœ--bõ !
 ```
