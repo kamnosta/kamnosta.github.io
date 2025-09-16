@@ -32,3 +32,11 @@ danafãsju lœ-bõ- !
 Fucking gave up after dying to the Last Judge 50+ times -- it's the phase I had to get through (not to mention the "runback") till the point I see the pattern I should get w/ -- My writing now is messy I know,. Said fuck it and used the cheat, and I regret NOTHING 'cause I saw how many hits it required. FUCK YOU!!!
 
 I hadn't such problem w/ the original HK: has my gayming skill regressed or is it of this game
+
+---
+
+*25.09.16*
+
+Yesterday I fucked off to play other games (found out that `T.F.A.N.C.S.` actually makes games)
+
+Will delete the cheat save & revive the backup file; trying the [Sinner's Road](https://preview.redd.it/jkcgohnx0u161.png?width=1080&crop=smart&auto=webp&s=cb21fecbc513e26ee699352db7a8f42d710b6060) route...
