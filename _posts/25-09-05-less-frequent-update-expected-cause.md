@@ -40,3 +40,11 @@ I hadn't such problem w/ the original HK: has my gayming skill regressed or is i
 Yesterday I fucked off to play other games (found out that `T.F.A.N.C.S.` actually makes games)
 
 Will delete the cheat save & revive the backup file; trying the [Sinner's Road](https://i.redd.it/jkcgohnx0u161.png) route...
+
+---
+
+*25.09.19*
+
+`magena fora` (I love HARD games I like DYING to the same boss and retrying AGAIN and AGAIN)
+
+`kadestre` (I've reached the citadel)
