@@ -48,3 +48,11 @@ Will delete the cheat save & revive the backup file; trying the [Sinner's Road](
 `magena fora` (I love HARD games I like DYING to the same boss and retrying AGAIN and AGAIN)
 
 `kadestre` (I've reached the citadel)
+
+---
+
+*25.09.28*
+
+<img alt="/imgs_posts/250928_silksong_last_judge.jpg" src="/imgs_posts/250928_silksong_last_judge.jpg" class="img-rendering-auto">
+
+get fucked m8
