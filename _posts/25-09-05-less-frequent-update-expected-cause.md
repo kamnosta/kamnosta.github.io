@@ -56,3 +56,13 @@ Will delete the cheat save & revive the backup file; trying the [Sinner's Road](
 <img alt="/imgs_posts/250928_silksong_last_judge.jpg" src="/imgs_posts/250928_silksong_last_judge.jpg" class="img-rendering-auto">
 
 get fucked m8
+
+---
+
+*25.10.01*
+
+I don't know whether it is normal to see the credits before reaching the "Act 3"
+
+Usually when a game throws any ending I consider it to be done and touch it not again, same went for the original *Hollow Knight*, *Cave Story*, *OneShot*, *Changed*, &c., &c.
+
+Haven't played the guitar for weeks...
