@@ -66,3 +66,11 @@ I don't know whether it is normal to see the credits before reaching the "Act 3"
 Usually when a game throws any ending I consider it to be done and touch it not again, same went for the original *Hollow Knight*, *Cave Story*, *OneShot*, *Changed*, &c., &c.
 
 Haven't played the guitar for weeks...
+
+---
+
+*25.10.04*
+
+FUCK the Bilewater bench
+
+I forgot about that desert completely... Didn't know it can be reached now
