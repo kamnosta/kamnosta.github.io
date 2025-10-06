@@ -74,3 +74,24 @@ Haven't played the guitar for weeks...
 FUCK the Bilewater bench
 
 I forgot about that desert completely... Didn't know it can be reached now
+
+---
+
+*25.10.06*
+
+O U R H A T E I S F O R E V E R<br>
+U R H A T E I S F O R E V E R O<br>
+R H A T E I S F O R E V E R O U<br>
+H A T E I S F O R E V E R O U R<br>
+A T E I S F O R E V E R O U R H<br>
+T E I S F O R E V E R O U R H A<br>
+E I S F O R E V E R O U R H A T<br>
+I S F O R E V E R O U R H A T E<br>
+S F O R E V E R O U R H A T E I<br>
+F O R E V E R O U R H A T E I S<br>
+O R E V E R O U R H A T E I S F<br>
+R E V E R O U R H A T E I S F O<br>
+E V E R O U R H A T E I S F O R<br>
+V E R O U R H A T E I S F O R E<br>
+E R O U R H A T E I S F O R E V<br>
+R O U R H A T E I S F O R E V E<br>
