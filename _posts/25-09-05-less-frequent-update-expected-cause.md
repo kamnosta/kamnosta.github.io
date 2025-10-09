@@ -95,3 +95,9 @@ E V E R O U R H A T E I S F O R<br>
 V E R O U R H A T E I S F O R E<br>
 E R O U R H A T E I S F O R E V<br>
 R O U R H A T E I S F O R E V E<br>
+
+---
+
+*25.10.09*
+
+If life were fair the projectile the Ant Dancer throws would not take two masks
