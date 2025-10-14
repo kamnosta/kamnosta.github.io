@@ -101,3 +101,9 @@ R O U R H A T E I S F O R E V E<br>
 *25.10.09*
 
 If life were fair the projectile the Ant Dancer throws would not take two masks
+
+---
+
+*25.10.14*
+
+Got the W10 LTSC. Fuck Microsoft and fuck the rest
