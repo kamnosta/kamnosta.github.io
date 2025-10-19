@@ -107,3 +107,15 @@ If life were fair the projectile the Ant Dancer throws would not take two masks
 *25.10.14*
 
 Got the W10 LTSC. Fuck Microsoft and fuck the rest
+
+---
+
+*25.10.19*
+
+<img alt="/imgs_posts/251019_silksong_ant_queen.png" src="/imgs_posts/251019_silksong_ant_queen.png" class="img-rendering-auto">
+
+Fuck you too ant queen from your memory, the cutesy little ant in the left corner first and fuck those two giant ant knights with oversized hitboxes
+
+Why does her heart look like that anyway
+
+---
