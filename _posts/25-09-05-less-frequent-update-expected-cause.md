@@ -119,3 +119,11 @@ Fuck you too ant queen from your memory, the cutesy little ant in the left corne
 Why does her heart look like that anyway
 
 ---
+
+*25.10.24*
+
+How was I supposed to find that Mt. Fay mask shard ~~and Whiteward spool fragment~~ eh fair
+
+Each one had respectively single remaining that I could not find w/o Internet
+
+Might be completing 100% before clearing L\*\*\* L\*\*\*
