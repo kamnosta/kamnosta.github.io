@@ -127,3 +127,11 @@ How was I supposed to find that Mt. Fay mask shard ~~and Whiteward spool fragmen
 Each one had respectively single remaining that I could not find w/o Internet
 
 Might be completing 100% before clearing L\*\*\* L\*\*\*
+
+---
+
+*25.10.26*
+
+No way I'm doing that Mt. Fay delivery...
+
+Prepared for 100% uvu
