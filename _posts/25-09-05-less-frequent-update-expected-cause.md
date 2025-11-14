@@ -141,3 +141,9 @@ Prepared for 100% uvu
 *25.10.31*
 
 - Song status: SILKED
+
+---
+
+*25.11.14*
+
+I was just there to observe the Hollow Knight and was appreciating how he looks at me man... couldn't get out
