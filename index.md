@@ -35,7 +35,7 @@ layout: home
 		{% for i in (0..0) %}
 			{% assign recent = recents[idx] %}
 			{% for inf in (0..999) %}
-				{% if recent.collection != "comics" %}
+				{% if recent.collection != "posts" %}
 					{% assign idx = idx | plus: 1 %}
 					{% assign recent = recents[idx] %}
 				{% else %}
