@@ -25,3 +25,9 @@ Anyways I want to fuck Bubsy
 Both "'Cause I'm a hero" Bubsy and "Uhh should we" Bubsy (better if simultaneous in time)
 
 wcpgw
+
+---
+
+*26.06.12*
+
+sorry bubs your Atari Jaguar game kinda sucks...
