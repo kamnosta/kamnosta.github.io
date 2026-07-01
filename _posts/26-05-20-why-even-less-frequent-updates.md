@@ -31,3 +31,9 @@ wcpgw
 *26.06.12*
 
 sorry bubs your Atari Jaguar game kinda sucks...
+
+---
+
+*26.07.01*
+
+^ The desert level was okay
