@@ -13,3 +13,9 @@ i
 ## My Sincerest Reaction
 *26.09.09*
 ![/imgs_sketches/260909_my_sincerest_reaction.png](/imgs_sketches/260909_my_sincerest_reaction.png)
+
+---
+
+## The Paths
+*26.09.11*
+![/imgs_sketches/260911_the_paths.png](/imgs_sketches/260911_the_paths.png)
