@@ -19,3 +19,10 @@ i
 ## The Paths
 *26.09.11*
 ![/imgs_sketches/260911_the_paths.png](/imgs_sketches/260911_the_paths.png)
+
+---
+
+
+## Television ("I'm a real person really")
+*26.09.12*
+![/imgs_sketches/260912_television_i_m_a_real_person_really.png](/imgs_sketches/260912_television_i_m_a_real_person_really.png)
