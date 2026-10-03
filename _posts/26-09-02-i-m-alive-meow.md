@@ -31,3 +31,9 @@ i
 ## Of Rotation
 *26.09.19*
 ![/imgs_sketches/260919_of_rotation.png](/imgs_sketches/260919_of_rotation.png)
+
+## Außer (mild)
+*26.10.03*
+![/imgs_sketches/261003_ausser_mild.png](/imgs_sketches/261003_ausser_mild.png)
+
+was away meow
