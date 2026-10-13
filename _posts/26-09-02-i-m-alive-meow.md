@@ -26,11 +26,13 @@ i
 *26.09.12*
 ![/imgs_sketches/260912_television_i_m_a_real_person_really.png](/imgs_sketches/260912_television_i_m_a_real_person_really.png)
 
-***
+---
 
 ## Of Rotation
 *26.09.19*
 ![/imgs_sketches/260919_of_rotation.png](/imgs_sketches/260919_of_rotation.png)
+
+---
 
 ## Außer (mild)
 *26.10.03*

@@ -30,7 +30,6 @@ timezone: Etc/UTC
 #github: [metadata] #Why is this needed...
 emptyarray: []
 home_cols:
-  - ishalvingover
   - heartstudies
   - minimallines
   - comics
@@ -39,6 +38,7 @@ home_cols:
   - splitramble
   - waterleveller
   - andheleftme
+  - ishalvingover
   - scenes
   - objects
   - posts
@@ -135,7 +135,7 @@ collections:
     permalink: /:collection/:slug
     order_reverse: false
     verse: true
-    desc: WIP
+    desc: ...
     
 defaults:
   - scope:
