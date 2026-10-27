@@ -42,4 +42,21 @@ was away meow
 
 ---
 
-[/hyp](/hyp)
+## hyp
+*26.10.16*
+
+BEIGE CONCRETE BUILDING -- MUNDANE SIGN
+
+PARTIALLY ERRORNEOUS SIGN -- NON-GEOLOCATABLE SIGN
+
+GENERAL WATERSTREAM -- PATH DIVERTS
+
+ACCIDENTAL CLEAR FLOOD -- NEVER HOME.
+
+---
+
+## kritafirst_001
+*26.10.27*
+![/imgs_sketches/261027_kritafirst_001.png](/imgs_sketches/261027_kritafirst_001.png)
+
+testing a new software
