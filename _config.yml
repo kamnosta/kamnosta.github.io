@@ -23,7 +23,7 @@ email: kamnosta@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   KAMNOSTA -- 'TIS MY NAME
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://kamnosta.net" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://kamnosta.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 timezone: Etc/UTC
 
