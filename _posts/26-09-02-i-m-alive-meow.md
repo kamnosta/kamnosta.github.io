@@ -60,3 +60,9 @@ ACCIDENTAL CLEAR FLOOD -- NEVER HOME.
 ![/imgs_sketches/261027_kritafirst_001.png](/imgs_sketches/261027_kritafirst_001.png)
 
 testing a new software
+
+---
+
+*26.11.10*
+
+hold on...
